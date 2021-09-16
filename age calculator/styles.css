@@ -1,0 +1,33 @@
+body {
+    font-size: 10px;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    flex-direction: column;
+    text-align: center;
+    height: 40rem;
+    min-width: 30rem;
+    align-items: center;
+}
+
+.container label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.container #dob {
+    margin-bottom: 3rem;
+}
+.container .desc {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+.container .age {
+    font-size: 3rem;
+}
