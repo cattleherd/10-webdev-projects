@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 10px;
+  font-family: "lato", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(246, 244, 244);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 33rem;
+  width: 33rem;
+  border-radius: 50%;
+  background-color: rgb(47, 45, 45);
+  box-shadow: 1px 1px 25px rgb(207, 207, 207) inset;
+  border: 0.5rem dashed rgb(80, 80, 80);
+  position: relative;
+  color: rgb(221, 221, 221);
+}
+.container .number {
+  --rotateAngle: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+  transform: rotate(var(--rotateAngle));
+}
+.container .number1 {--rotateAngle: 30deg;}
+.container .number2 {--rotateAngle: 60deg;}
+.container .number3 {--rotateAngle: 90deg;}
+.container .number3 {--rotateAngle: 90deg;}
+.container .number4 {--rotateAngle: 120deg;}
+.container .number5 {--rotateAngle: 150deg;}
+.container .number6 {--rotateAngle: 180deg;}
+.container .number7 {--rotateAngle: 210deg;}
+.container .number8 {--rotateAngle: 240deg;}
+.container .number9 {--rotateAngle: 270deg;}
+.container .number10 {--rotateAngle: 300deg;}
+.container .number11 {--rotateAngle: 330deg;}
+
+.container .number .undo {
+  --undoAngle:0;
+  transform: rotate(var(--undoAngle));
+}
+.container .number1 .undo {--undoAngle: -30deg;}
+.container .number2 .undo {--undoAngle: -60deg;}
+.container .number3 .undo {--undoAngle: -90deg;}
+.container .number4 .undo {--undoAngle: -120deg;}
+.container .number5 .undo {--undoAngle: -150deg;}
+.container .number6 .undo {--undoAngle: -180deg;}
+.container .number7 .undo {--undoAngle: -210deg;}
+.container .number8 .undo {--undoAngle: -240deg;}
+.container .number9 .undo {--undoAngle: -270deg;}
+.container .number10 .undo {--undoAngle: -300deg;}
+.container .number11 .undo {--undoAngle: -330deg;}
+
+.container .hand {
+  width: 10px;
+  height: 90px;
+  position: absolute;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  z-index: 10;
+  transform-origin: bottom;
+  bottom: 50%;
+  right: 50%;
+}
+
+.container .hour {
+  width: 10px;
+  height: 75px;
+  background-color: rgb(211, 211, 211);
+}
+
+.container .minute {
+  width: 5px;
+  height: 100px;
+  background-color: rgb(101, 101, 206);
+}
+
+.container .second {
+  width: 2px;
+  height: 130px;
+  background-color: rgb(243, 68, 68);
+}
+
+.container::after{
+  background-color: rgb(228, 228, 228);
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 11;
+  left: 47.5%;
+  bottom: 47%;
+}
